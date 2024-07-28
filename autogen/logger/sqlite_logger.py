@@ -24,6 +24,7 @@ if TYPE_CHECKING:
     from autogen.oai.groq import GroqClient
     from autogen.oai.mistral import MistralAIClient
     from autogen.oai.together import TogetherClient
+    from autogen.oai.bedrock import BedrockClient
 
 logger = logging.getLogger(__name__)
 lock = threading.Lock()
@@ -402,6 +403,7 @@ class SqliteLogger(BaseLogger):
             TogetherClient,
             GroqClient,
             CohereClient,
+            BedrockClient,
         ],
         wrapper: OpenAIWrapper,
         init_args: Dict[str, Any],

@@ -91,6 +91,7 @@ extra_require = {
     "mistral": ["mistralai>=0.2.0"],
     "groq": ["groq>=0.9.0"],
     "cohere": ["cohere>=5.5.8"],
+    "bedrock": ["boto3[bedrock-runtime]"],
 }
 
 setuptools.setup(
