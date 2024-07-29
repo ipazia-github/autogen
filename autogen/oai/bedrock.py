@@ -80,7 +80,7 @@ class BedrockClient:
         for content in response_message["content"]:
             if "text" in content:
                 text: str = content["text"]
-                message = ChatCompletionMessage(content=text, role=role, tool_calls=None)
+                message = ChatCompletionMessage(content=text, role="assistant", tool_calls=None)
             # NOTE: other type of output may be dealt with here
 
         reponse_usage = response["usage"]
